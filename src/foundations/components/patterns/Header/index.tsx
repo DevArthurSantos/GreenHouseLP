@@ -1,3 +1,5 @@
+import Paragraph from "@foundations/components/typography/Paragraph";
+import { ParagraphColorsEnum } from "@infra/enums/paragraphEnums";
 import S from "./styled";
 
 function Header(): JSX.Element {
@@ -5,7 +7,20 @@ function Header(): JSX.Element {
     <S.HeaderWrapper>
       <S.TitleContainer>
         <S.HeaderTitle>Boilerplate</S.HeaderTitle>
-        <S.HeaderSubTitle>React + Vite + axios + Styled-Components </S.HeaderSubTitle>
+        <Paragraph
+          color={ParagraphColorsEnum.Secondary}
+          span={{
+            color: "red",
+            style: "italic;",
+            decoration: "underline blue",
+            size: "50px"
+          }}
+        >
+          React + Vite + axios + Styled-Components
+          <br />
+          <br />
+          <span>texto espan</span>
+        </Paragraph>
       </S.TitleContainer>
       <div>
         <S.HeaderTitle>Arthur Santos</S.HeaderTitle>
