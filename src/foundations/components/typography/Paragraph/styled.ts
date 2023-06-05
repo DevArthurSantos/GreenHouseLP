@@ -9,7 +9,7 @@ const Styleds = {
   font-style: normal;
   font-weight: ${({ weight }) => weight ? weight : '500'};
   font-size: ${({ size }) => size ? size : '22px'};
-  text-align: center;
+  text-align: ${({ align }) => align ? align : 'center'};
   letter-spacing: 0.2px;
   & span{
     ${({ span }) => css`
