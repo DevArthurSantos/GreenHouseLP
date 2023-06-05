@@ -7,7 +7,7 @@ const Styleds = {
   color: ${({ color, theme }) => (theme.colors.text[color])};
   font-family: 'Montserrat';
   font-style: normal;
-  font-weight: 500;
+  font-weight: ${({ weight }) => weight ? weight : '500'};
   font-size: ${({ size }) => size ? size : '22px'};
   text-align: center;
   letter-spacing: 0.2px;
