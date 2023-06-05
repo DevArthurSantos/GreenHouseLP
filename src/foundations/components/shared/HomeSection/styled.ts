@@ -16,12 +16,13 @@ const Styleds = {
   gap: 50px;
   `,
   SolicitarOrcamentoBTN: styled.button`
-  width: 236px;
-  height: 60px;
+  width: 195px;
+  height: 50px;
   background: ${({ theme }) => theme.colors.LightOrange};
   color: ${({ theme }) => theme.colors.text.Light};
   border: none;
   border-radius: 10px;
+  font-weight: 700;
   `
 };
 
