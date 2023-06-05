@@ -1,16 +1,17 @@
 import styled, { css } from "styled-components";
 
-import { ParagraphContainProps, ParagraphProps } from "@infra/types/paragraphProps";
+import { TitleContainProps, TitleProps } from "@infra/types/titleProps";
 
 const Styleds = {
-  Paragraph: styled.p<ParagraphProps>`
+  Title: styled.h1<TitleProps>`
   color: ${({ color, theme }) => (theme.colors.text[color])};
   font-family: 'Montserrat';
   font-style: normal;
-  font-weight: ${({ weight }) => weight ? weight : '500'};
+  font-weight: 700;
   font-size: ${({ size }) => size ? size : '22px'};
   text-align: center;
   letter-spacing: 0.2px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   & span{
     ${({ span }) => css`
     color: ${span?.color};
@@ -20,7 +21,7 @@ const Styleds = {
     `}
   }
   `,
-  ParagraphContainer: styled.div<ParagraphContainProps>`
+  TitleContainer: styled.div<TitleContainProps>`
   width: ${({ width }) => width ? width : '100%'};
   `
 };

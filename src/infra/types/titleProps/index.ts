@@ -1,13 +1,11 @@
 import { ReactNode } from "react"
+import { TitleColorsEnum } from "@infra/enums/titleEnums"
 
-import { ParagraphColorsEnum } from "@infra/enums/paragraphEnums"
-
-export type ParagraphProps = {
+export type TitleProps = {
   children: ReactNode
-  color: ParagraphColorsEnum
+  color: TitleColorsEnum
   size?: string
   width?: string
-  weight?: string
   span?: {
     size?: string,
     color?: string,
@@ -16,6 +14,6 @@ export type ParagraphProps = {
   }
 }
 
-export type ParagraphContainProps = {
+export type TitleContainProps = {
   width?: string
 }

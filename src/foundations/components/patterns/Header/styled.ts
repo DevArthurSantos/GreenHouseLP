@@ -7,32 +7,33 @@ import HeaderSubTitleBreakpoints from "./Breakpoints/HeaderSubTitleBreakpoints";
 
 const Styleds = {
   HeaderWrapper: styled.header`
-    background-color: #F6F7F8;
-    color: #fff;
-    display: flex;
-    justify-content: space-between;
-    align-items: end;
-    padding: 1rem;
+    background-color: ${({ theme }) => theme.colors.DarkGreen};
+    width: 100%;
+    height: 95px;
   `,
-  TitleContainer: styled.div`
-    display: flex;
-    gap: .3rem;
-    flex-flow: column nowrap;
+  LogoContainer: styled.div`
   `,
-  HeaderTitle: styled.h1`
-    color: #020202;
-    ${Responsiveness(HeaderTitleBreakpoints)}
-    font-weight: bold;
+  HeaderContext: styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  margin: 0 100px 0 100px;
   `,
-  HeaderSubTitle: styled.h2`
-    color: #BAC1CD;
-    ${Responsiveness(HeaderSubTitleBreakpoints)}
-    font-weight: bold;
-  `,
-  HeaderIcon: styled.img`
-    font-size: 24px;
-    font-weight: bold;
-  `,
+  // HeaderTitle: styled.h1`
+  //   color: #020202;
+  //   ${Responsiveness(HeaderTitleBreakpoints)}
+  //   font-weight: bold;
+  // `,
+  // HeaderSubTitle: styled.h2`
+  //   color: #BAC1CD;
+  //   ${Responsiveness(HeaderSubTitleBreakpoints)}
+  //   font-weight: bold;
+  // `,
+  // HeaderIcon: styled.img`
+  //   font-size: 24px;
+  //   font-weight: bold;
+  // `,
 };
 
 export default Styleds;

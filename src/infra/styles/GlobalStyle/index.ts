@@ -1,28 +1,28 @@
 import { createGlobalStyle } from 'styled-components'
 
-import RobotoRegular from '../fonts/RobotoRegular.ttf';
-import RobotoMedium from '../fonts/RobotoMedium.ttf';
-import RobotoBold from '../fonts/RobotoBold.ttf';
+import Montserrat from '../fonts/Montserrat.ttf';
+import MontserratMedium from '../fonts/MontserratMedium.ttf';
+import MontserratBold from '../fonts/MontserratBold.ttf';
 
 const GlobalStyle = createGlobalStyle`
   @font-face {
-    font-family: 'Roboto Regular';
-    src: local('Roboto Regular'), local('RobotoRegular'),
-    url(${RobotoRegular}) format('ttf'),
+    font-family: 'Montserrat';
+    src: local('Montserrat'), local('Montserrat'),
+    url(${Montserrat}) format('ttf'),
     font-weight: 300;
     font-style: normal;
   }
   @font-face {
-    font-family: 'Roboto Medium';
-    src: local('Roboto Medium'), local('RobotoMedium'),
-    url(${RobotoMedium}) format('ttf'),
+    font-family: 'MontserratMedium';
+    src: local('MontserratMedium'), local('MontserratMedium'),
+    url(${MontserratMedium}) format('ttf'),
     font-weight: 500;
     font-style: normal;
   }
   @font-face {
-    font-family: 'Roboto Bold';
-    src: local('Roboto Bold'), local('RobotoBold'),
-    url(${RobotoBold}) format('ttf'),
+    font-family: 'MontserratBold';
+    src: local('MontserratBold'), local('MontserratBold'),
+    url(${MontserratBold}) format('ttf'),
     font-weight: 800;
     font-style: normal;
   }
@@ -56,7 +56,8 @@ const GlobalStyle = createGlobalStyle`
   }
   body {
     line-height: 1;
-    font-family: Roboto;
+    font-family: Montserrat;
+    font-style: normal;
     font-weight: 300;
   }
   ol, ul {
