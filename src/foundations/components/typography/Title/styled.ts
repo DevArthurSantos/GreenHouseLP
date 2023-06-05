@@ -11,7 +11,6 @@ const Styleds = {
   font-size: ${({ size }) => size ? size : '22px'};
   text-align: center;
   letter-spacing: 0.2px;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   & span{
     ${({ span }) => css`
     color: ${span?.color};

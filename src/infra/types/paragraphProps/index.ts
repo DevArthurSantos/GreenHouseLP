@@ -8,6 +8,7 @@ export type ParagraphProps = {
   size?: string
   width?: string
   weight?: string
+  align?: string
   span?: {
     size?: string,
     color?: string,
