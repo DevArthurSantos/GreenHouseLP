@@ -7,7 +7,7 @@ export type ParagraphProps = {
   color: ParagraphColorsEnum
   size?: string
   width?: string
-  weight: string
+  weight?: string
   span?: {
     size?: string,
     color?: string,
