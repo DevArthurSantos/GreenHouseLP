@@ -18,7 +18,6 @@ const Styleds = {
   align-items: center;
   justify-content: space-between;
   height: 100%;
-  background: "red";
   margin: 0 100px 0 100px;
   `,
   // HeaderTitle: styled.h1`

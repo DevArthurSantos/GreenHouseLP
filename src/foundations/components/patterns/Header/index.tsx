@@ -1,6 +1,4 @@
 import NavBar from "@foundations/components/shared/NavBar";
-import Paragraph from "@foundations/components/typography/Paragraph";
-import { ParagraphColorsEnum } from "@infra/enums/paragraphEnums";
 import S from "./styled";
 
 function Header(): JSX.Element {
