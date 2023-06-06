@@ -6,6 +6,7 @@ export type TitleProps = {
   color: TitleColorsEnum
   size?: string
   width?: string
+  align?: string
   span?: {
     size?: string,
     color?: string,
