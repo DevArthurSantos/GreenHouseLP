@@ -6,8 +6,8 @@ const Styleds = {
   Title: styled.h1<TitleProps>`
   color: ${({ color, theme }) => (theme.colors.text[color])};
   font-family: 'Montserrat';
+  font-weight: ${({ weight }) => weight ? weight : '500'};
   font-style: normal;
-  font-weight: 700;
   font-size: ${({ size }) => size ? size : '22px'};
   text-align: ${({ align }) => align ? align : 'center'};
   letter-spacing: 0.2px;
