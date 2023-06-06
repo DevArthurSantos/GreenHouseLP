@@ -42,7 +42,6 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
     border: 0;
-    font-size: 100%;
     font: inherit;
     vertical-align: baseline;
   }
@@ -74,6 +73,20 @@ const GlobalStyle = createGlobalStyle`
   table {
     border-collapse: collapse;
     border-spacing: 0;
+  }
+  ::-webkit-scrollbar {
+  width: 8px;
+  height: 15px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: rgba(90, 90, 90, .5);
+    border: 1px solid rgba(90, 90, 90, .8);
+    border-radius: 15px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #fcfcfc;
   }
 `
 

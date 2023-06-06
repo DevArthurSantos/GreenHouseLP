@@ -1,5 +1,6 @@
 export enum TitleColorsEnum {
   Primary = "Primary",
   Secondary = "Secondary",
-  Light = "Light"
+  Light = "Light",
+  LaranjaDark = "LaranjaDark"
 }
