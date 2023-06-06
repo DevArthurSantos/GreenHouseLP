@@ -7,6 +7,7 @@ export type TitleProps = {
   size?: string
   width?: string
   align?: string
+  weight?: string
   span?: {
     size?: string,
     color?: string,
