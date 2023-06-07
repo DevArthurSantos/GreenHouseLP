@@ -16,8 +16,8 @@ function HomePageLayout(): JSX.Element {
       <AboutSection />
       <ProductSection />
       <LinesSection />
-      {/* <ContactSection />
-      <FAQSection /> */}
+      <ContactSection />
+      {/* <FAQSection /> */}
       <FotterSection />
     </S.Container>
   );
