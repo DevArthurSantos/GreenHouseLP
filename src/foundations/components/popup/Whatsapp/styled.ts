@@ -18,6 +18,10 @@ const Styles = {
   background: ${({ theme }) => theme.colors.LightGreen};
   box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.06), 0px 2px 32px rgba(0, 0, 0, 0.16);
   border-radius: 50px;
+  
+  @media (max-width: 500px) {
+    display: none;
+  }
   `,
 }
 
