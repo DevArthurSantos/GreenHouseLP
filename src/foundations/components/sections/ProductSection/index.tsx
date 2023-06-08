@@ -8,9 +8,9 @@ import { MdOutlineAvTimer } from 'react-icons/md'
 import { TbTemperatureCelsius } from 'react-icons/tb'
 import S from "./styled";
 
-function ProductSection(): JSX.Element {
+function ProductSection({ id }: { id: string }): JSX.Element {
   return (
-    <S.ProductSectionWrapper>
+    <S.ProductSectionWrapper id={id}>
       <S.ProductSectionContext>
         <S.TitleContainer>
           <Title

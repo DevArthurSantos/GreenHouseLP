@@ -1,15 +1,19 @@
+import Responsiveness from "@infra/styles/Responsiveness";
 import styled from "styled-components";
+import ImageBreakpoints from "./Breakpoints/ImageBreakpoints";
+import TextContextBreakpoints from "./Breakpoints/TextContextBreakpoints";
 
 const Styleds = {
   AboutSectionWrapper: styled.section`
     width: 100%;
-    margin: 100px 0;
+    padding: 100px 0;
   `,
   AboutSectionContext: styled.div`
   display: flex;
   align-items: center;
   justify-content: space-around;
-  flex-flow: row wrap;
+  flex-flow: row wrap-reverse;
+  ${Responsiveness(TextContextBreakpoints)}
   `,
   TextContext: styled.div`
   width: 552px;
@@ -25,12 +29,11 @@ const Styleds = {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 552px;
-  height: 513px;
   `,
   Image: styled.img`
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   border-radius: 15px;
+  ${Responsiveness(ImageBreakpoints)}
   `
 };
 

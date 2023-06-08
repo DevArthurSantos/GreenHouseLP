@@ -2,10 +2,11 @@ import styled from "styled-components";
 
 const Styleds = {
   HomeSectionWrapper: styled.section`
-    background: url('assets/images/png/homeBackground.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
+  background: url('assets/images/png/homeBackground.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  padding-top: 95px;
   `,
   HomeSectionContext: styled.div`
   display: flex;

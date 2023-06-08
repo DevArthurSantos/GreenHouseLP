@@ -1,10 +1,22 @@
+import { useState } from "react"
 import S from "./styled"
 
 
-function NavBar(){
-  const pags = ["Inicio", "Sobre-nós", "Produtos", "Contato"]
+function NavBar() {
+  const pags = ["Inicio", "Sobre", "Produtos", "Contato"]
+  const [active, setActive] = useState('Inicio')
 
-  return <S.NavContainer>{pags.map((p) => <S.NavButtons>{p}</S.NavButtons>)}</S.NavContainer>
+  function handleActive(active: string) {
+    setActive(active)
+  }
+
+  return (
+    <>
+      <S.NavContainer>
+        {pags.map((p) => <S.NavButtons href={'#' + p} onClick={() => { handleActive(p) }} isActive={active} name={p}>{p}</S.NavButtons>)}
+      </S.NavContainer>
+    </>
+  )
 }
 
 export default NavBar

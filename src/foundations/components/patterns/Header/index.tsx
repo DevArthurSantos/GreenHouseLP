@@ -5,9 +5,8 @@ function Header(): JSX.Element {
   return (
     <S.HeaderWrapper>
       <S.HeaderContext>
-
       <S.LogoContainer>
-        <img src="assets/images/png/logo.png" />
+        <S.Image src="assets/images/png/logo.png" />
       </S.LogoContainer>
       <S.LogoContainer>
         <NavBar />

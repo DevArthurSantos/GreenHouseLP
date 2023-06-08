@@ -2,11 +2,13 @@ import { BreakpointProps } from "@infra/types/breakpointProps";
 
 export default [
   {
-    media: 1920,
-    fz: "2rem"
+    media: 565,
+    w: '372px',
+    h: '329px'
   },
   {
-    media: 435,
-    fz: "1.5rem"
-  }
+    media: 380,
+    w: '250px',
+    h: '221px'
+  },
 ] as BreakpointProps[]

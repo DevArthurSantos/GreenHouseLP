@@ -6,8 +6,8 @@ const Styles = {
   flex-direction: column;
   align-items: center;
   overflow: hidden;
-  max-width: 315px;
-  min-height: 470px;
+  max-width: 300px;
+  height: 465px;
   background: ${({ theme }) => theme.colors.background.Light};
   box-shadow: 0px 4px 31px rgba(0, 0, 0, 0.3);
   border-radius: 15px;

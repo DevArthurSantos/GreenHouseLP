@@ -9,8 +9,11 @@ const Styleds = {
   align-items: flex-start;
   justify-content: space-around;
   flex-flow: row wrap;
-  margin: 100px 0;
   gap: 50px;
+  padding: 100px 0;
+  @media (max-width: 500px) {
+    padding: 0;
+  }
   `,
   ImageContainer: styled.div`
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -20,18 +23,24 @@ const Styleds = {
   align-items: center;
   flex-direction: column;
   gap: 25px;
+  @media (max-width: 500px) {
+    display: none;
+  }
   `,
   FormContainer: styled.div`
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 13.0742px;
   overflow: hidden;
   background-color: ${({ theme }) => theme.colors.LightGreen};
-  max-width: 300px;
+  min-width: 300px;
   height: 600px;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 30px 30px 0 30px;
+  @media (max-width: 500px) {
+    width: 100%;
+  }
   `,
   InputsContainer: styled.div`
   display: flex;

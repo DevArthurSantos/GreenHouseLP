@@ -7,18 +7,29 @@ import LinesSection from "@foundations/components/sections/LinesSection";
 import FAQSection from "@foundations/components/sections/FAQSection";
 import ContactSection from "@foundations/components/sections/ContactSection";
 import AboutSection from "@foundations/components/sections/AboutSection";
+import MobileFotterSection from "@foundations/components/sections/MobileFotterSection";
 
 function HomePageLayout(): JSX.Element {
   return (
     <S.Container>
       <Header />
-      <HomeSection />
-      <AboutSection />
-      <ProductSection />
+      <HomeSection id="Inicio" />
+      <S.Padding>
+        <AboutSection id="Sobre" />
+        <ProductSection id="Produtos" />
+      </S.Padding>
       <LinesSection />
-      <ContactSection />
+      <S.Padding>
+        <ContactSection id="Contato" />
+      </S.Padding>
       {/* <FAQSection /> */}
-      <FotterSection />
+      {/* <FotterSection /> */}
+      <S.Hidden>
+        <FotterSection />
+      </S.Hidden>
+      <S.Show>
+        <MobileFotterSection />
+      </S.Show>
     </S.Container>
   );
 }

@@ -4,9 +4,9 @@ import { ParagraphColorsEnum } from "@infra/enums/paragraphEnums";
 import { TitleColorsEnum } from "@infra/enums/titleEnums";
 import S from "./styled";
 
-function ContactSection(): JSX.Element {
+function ContactSection({ id }: { id: string }): JSX.Element {
   return (
-    <S.ContactSectionWrapper>
+    <S.ContactSectionWrapper id={id}>
       <S.ContactSectionContext>
         <S.ImageContainer>
           <div>

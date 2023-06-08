@@ -4,9 +4,9 @@ import { ParagraphColorsEnum } from "@infra/enums/paragraphEnums";
 import { TitleColorsEnum } from "@infra/enums/titleEnums";
 import S from "./styled";
 
-function HomeSection(): JSX.Element {
+function HomeSection({ id }: { id: string }): JSX.Element {
   return (
-    <S.HomeSectionWrapper>
+    <S.HomeSectionWrapper id={id}>
       <S.HomeSectionContext>
         <Title color={TitleColorsEnum.Light} size="54px" width="1100px">
           CONSTRUA A CASA DOS SEUS SONHOS COM TIJOLOS ECOLÓGICOS

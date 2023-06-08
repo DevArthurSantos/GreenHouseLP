@@ -1,6 +1,8 @@
 import styled, { css } from "styled-components";
 
 import { TitleContainProps, TitleProps } from "@infra/types/titleProps";
+import Responsiveness from "@infra/styles/Responsiveness";
+import TitleBreakpoints from "./Breakpoints/TitleBreakpoints";
 
 const Styleds = {
   Title: styled.h1<TitleProps>`
@@ -11,17 +13,19 @@ const Styleds = {
   font-size: ${({ size }) => size ? size : '22px'};
   text-align: ${({ align }) => align ? align : 'center'};
   letter-spacing: 0.2px;
+  ${Responsiveness(TitleBreakpoints)}
   & span{
     ${({ span }) => css`
     color: ${span?.color};
     font-size: ${span?.size};
     font-style: ${span?.style};
     text-decoration: ${span?.decoration};
+  ${Responsiveness(TitleBreakpoints)}
     `}
   }
   `,
   TitleContainer: styled.div<TitleContainProps>`
-  width: ${({ width }) => width ? width : '100%'};
+  max-width: ${({ width }) => width ? width : '100%'};
   `
 };
 

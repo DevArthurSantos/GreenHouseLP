@@ -4,9 +4,9 @@ import { ParagraphColorsEnum } from "@infra/enums/paragraphEnums";
 import { TitleColorsEnum } from "@infra/enums/titleEnums";
 import S from "./styled";
 
-function AboutSection(): JSX.Element {
+function AboutSection({ id }: { id: string }): JSX.Element {
   return (
-    <S.AboutSectionWrapper>
+    <S.AboutSectionWrapper id={id}>
       <S.AboutSectionContext>
         <S.ImageContainer>
           <S.Image src="assets/images/png/aboutImage.png" />

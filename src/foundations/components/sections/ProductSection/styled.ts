@@ -3,7 +3,11 @@ import styled from "styled-components";
 const Styleds = {
   ProductSectionWrapper: styled.section`
   width: 100%;
-  margin: 100px 0;
+  padding: 100px 0;
+
+  @media (max-width: 500px) {
+        display: none;
+    }
   `,
   ProductSectionContext: styled.div`
   display: flex;
@@ -22,7 +26,7 @@ const Styleds = {
     display: flex;
     align-item: center;
     gap: 50px;
-    flex-flow: row warp;
+    flex-flow: row nowrap;
   }
   `,
 };

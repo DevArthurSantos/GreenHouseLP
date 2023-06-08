@@ -9,7 +9,7 @@ const Styles = {
   cursor: pointer;
   text-decoration: none;
 
-  position: absolute;
+  position: fixed;
   width: 240px;
   height: 30px;
   bottom: 25px;
