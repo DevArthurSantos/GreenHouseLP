@@ -20,6 +20,12 @@ const Styleds = {
   justify-content: space-between;
   height: 100%;
   margin: 0 100px 0 100px;
+  @media (max-width: 768px) {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0;
+  }
   `,
   Image: styled.img`
     ${Responsiveness(HeaderImageBreakpoints)}
