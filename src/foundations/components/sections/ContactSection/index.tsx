@@ -7,29 +7,59 @@ import { init, send } from "@emailjs/browser"
 import S from "./styled";
 
 function ContactSection({ id }: { id: string }): JSX.Element {
-  const [name, setName] = useState('')
-  const [mailto, setMailto] = useState('')
-  const [contatc, setContatc] = useState('')
-  const [company, setCompany] = useState('')
-  const [message, setMessage] = useState('')
+  const [name, setName] = useState('');
+  const [mailto, setMailto] = useState('');
+  const [contact, setContact] = useState('');
+  const [company, setCompany] = useState('');
+  const [message, setMessage] = useState('');
 
-  async function onSubmit(e: any) {
-    e.preventDefault()
-
-    const formData = {
-      name,
-      mailto,
-      contatc,
-      company,
-      message
+  async function sendEmail(e: any) {
+    e.preventDefault();
+  
+    const nameRegex = /^[A-Za-z\s]+$/;
+    const mailtoRegex = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/;
+    const contactRegex = /^\d{11}$/;
+    const companyRegex = /^[A-Za-z\s]+$/;
+  
+    if (!nameRegex.test(name.trim())) {
+      alert('Por favor, insira um nome válido');
+      return;
     }
-
+  
+    if (!mailtoRegex.test(mailto.trim())) {
+      alert('Por favor, insira um endereço de e-mail válido');
+      return;
+    }
+  
+    if (!contactRegex.test(contact.trim())) {
+      alert('Por favor, insira um número de contato válido (11 dígitos numéricos)');
+      return;
+    }
+  
+    if (!companyRegex.test(company.trim())) {
+      alert('Por favor, insira um nome de empresa válido');
+      return;
+    }
+  
+    const formData = {
+      name: name.trim(),
+      mailto: mailto.trim(),
+      contact: contact.trim(),
+      company: company.trim(),
+      message
+    };
+  
     const sendEmail = await Promise.all([
       init('T5Bd_Euyyl0VIjCqM'),
       send('service_ei747ic', 'template_h361g9q', formData)
-    ])
-
-    console.log('send')
+    ]);
+  
+    setName('')
+    setMailto('')
+    setContact('')
+    setCompany('')
+    setMessage('')
+    alert('Envio realizado com sucesso!');
   }
 
   return (
@@ -85,10 +115,10 @@ function ContactSection({ id }: { id: string }): JSX.Element {
           <S.InputsContainer>
             <S.FormInput type="text" placeholder="Nome*" value={name} onChange={(e) => setName(e.target.value)} />
             <S.FormInput type="email" placeholder="E-mail*" value={mailto} onChange={(e) => setMailto(e.target.value)} />
-            <S.FormInput type="tel" placeholder="Telefone*" value={contatc} onChange={(e) => setContatc(e.target.value)} />
+            <S.FormInput type="tel" placeholder="00 00000 0000*" value={contact} onChange={(e) => setContact(e.target.value)} />
             <S.FormInput type="text" placeholder="Empresa*" value={company} onChange={(e) => setCompany(e.target.value)} />
             <S.FormInputTextArea placeholder="Menssagem*" value={message} onChange={(e) => setMessage(e.target.value)} />
-            <S.FormInputSubmit type="submit" value="Enviar" onClick={(e) => onSubmit(e)} />
+            <S.FormInputSubmit type="submit" value="Enviar" onClick={(e) => sendEmail(e)} />
           </S.InputsContainer>
         </S.FormContainer>
 
