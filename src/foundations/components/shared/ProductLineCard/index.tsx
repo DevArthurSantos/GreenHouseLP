@@ -19,14 +19,18 @@ function ProductLineCard({ children, image, CardTitle }: ProductLineCardProps) {
       <S.ProductLineCardContainer>
         <S.Image src={image} alt={CardTitle} />
         <Title color={TitleColorsEnum.LaranjaDark}
-          size="32px"
+          size="30px"
           weight="700"
         >
           {CardTitle}
         </Title>
         <div>
-          <Paragraph color={ParagraphColorsEnum.Primary}
+          <Paragraph color={ParagraphColorsEnum.Secondary}
             size="20px"
+            span={{
+              color: "#834B14",
+              weight: "600"
+            }}
           >
             {children}
           </Paragraph>

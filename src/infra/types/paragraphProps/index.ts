@@ -14,6 +14,7 @@ export type ParagraphProps = {
     color?: string,
     style?: string,
     decoration?: string,
+    weight?: string
   }
 }
 

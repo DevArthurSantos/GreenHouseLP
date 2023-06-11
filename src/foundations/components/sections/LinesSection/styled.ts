@@ -19,7 +19,7 @@ const Styleds = {
   align-items: center;
   justify-content: center;
   flex-flow: row wrap;
-  gap: 50px;
+  gap: 150px;
   `,
 };
 

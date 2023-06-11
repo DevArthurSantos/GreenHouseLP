@@ -16,7 +16,11 @@ const Styleds = {
   flex-flow: column nowrap;
   gap: 100px;
   `,
-  TitleContainer: styled.div``,
+  TitleContainer: styled.div`
+  p {
+    margin-top: 20px;
+  }
+  `,
   CardsContainer: styled.div`
   display: flex;
   align-items: center;
@@ -24,7 +28,6 @@ const Styleds = {
   gap: 100px;
   & > div{
     display: flex;
-    align-item: center;
     gap: 50px;
     flex-flow: row nowrap;
   }

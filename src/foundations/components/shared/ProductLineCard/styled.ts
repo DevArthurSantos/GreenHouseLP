@@ -14,6 +14,9 @@ const Styles = {
   gap: 25px;
   & > div{
     padding: 0 30px;
+    p {
+      line-height: 30px;
+    }
   }
   `,
   Image: styled.img`

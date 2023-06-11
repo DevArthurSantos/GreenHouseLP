@@ -24,6 +24,8 @@ function ProductSection({ id }: { id: string }): JSX.Element {
             span={{
               color: '#5CAB9A',
               style: 'italic',
+              weight:'700'
+
             }}
           >
             Saiba mais sobre as vantagens  dos <span>Tijolos Ecológicos.</span>

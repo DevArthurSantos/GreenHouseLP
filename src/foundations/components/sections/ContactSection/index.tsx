@@ -26,6 +26,7 @@ function ContactSection({ id }: { id: string }): JSX.Element {
               span={{
                 style: 'italic',
                 color: '#5CAB9A',
+                weight: 'bold'
               }}
             >
               Ligue para nós ou <span>solicite</span> uma visita a qualquer momento, esforçamo-nos por responder a todas as perguntas dentro de <span>24 horas</span> em dias úteis.

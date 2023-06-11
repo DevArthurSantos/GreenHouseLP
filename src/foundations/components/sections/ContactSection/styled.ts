@@ -78,6 +78,7 @@ const Styleds = {
   width: 94.79px;
   height: 42.53px;
   background: ${({ theme }) => theme.colors.LightOrange};
+  color: ${({ theme }) => theme.colors.text.Light};
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 6.5371px;
   border: none;

@@ -17,6 +17,7 @@ const Styleds = {
   & span{
     ${({ span }) => css`
     color: ${span?.color};
+    font-weight: ${span?.weight};
     font-size: ${span?.size};
     font-style: ${span?.style};
     text-decoration: ${span?.decoration};

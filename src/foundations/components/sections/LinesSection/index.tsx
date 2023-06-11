@@ -19,11 +19,10 @@ function LinesSection(): JSX.Element {
             CardTitle="Tijolo Padrão"
             image='assets/images/png/tijoloPadrão.png'
           >
-            Tijolo Padrão,
             vergas, contra-vergas,
             passagem horizontal de tubos e
             conduítes.
-            Dimensões
+            <br/><span>Dimensões</span><br/>
             12,5 x 25 x 6,25
             e
             15 x 30 x 7,50
@@ -32,9 +31,8 @@ function LinesSection(): JSX.Element {
             CardTitle="Tijolo Canaleta"
             image='assets/images/png/tijoloCanaleta.png'
           >
-            Tijolo Canaleta
-            Semelhante ao Padrão, possui uma "vala" no fundo para que se possa formar cintas, vergas, contra-vergas, passagem horizontal de tubos e conduítes.
-            Dimensões
+            vergas, contra-vergas, passagem horizontal de tubos e conduítes.
+            <br/><span>Dimensões</span><br/>
             12,5 x 25 x 6,25
             e
             15 x 30 x 7,50
@@ -43,9 +41,8 @@ function LinesSection(): JSX.Element {
             CardTitle="Meio Padrão"
             image='assets/images/png/meioTijolo.png'
           >
-            Meio Tijolo
-            Proporciona facilidade e rapidez na conclusão de paredes. Nos remates das portas, janelas e paredes são usados os meio tijolos facilitando o acabamento.
-            Dimensões
+            São usados nos remates das portas, janelas e paredes.
+            <br/><span>Dimensões</span><br/>
             12,5 x 12,5 x 6,25
             e
             15 x 15 x 7,50

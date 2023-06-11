@@ -8,10 +8,10 @@ function HomeSection({ id }: { id: string }): JSX.Element {
   return (
     <S.HomeSectionWrapper id={id}>
       <S.HomeSectionContext>
-        <Title color={TitleColorsEnum.Light} size="54px" width="1100px">
+        <Title color={TitleColorsEnum.Light} size="54px" width="1200px" weight="700">
           CONSTRUA A CASA DOS SEUS SONHOS COM TIJOLOS ECOLÓGICOS
         </Title>
-        <Paragraph color={ParagraphColorsEnum.Light} size="22px" width="750px">
+        <Paragraph color={ParagraphColorsEnum.Light} size="22px" width="900px">
           Não perca tempo e solicite um orçamento agora mesmo para realizar o projeto dos seus sonhos com um desconto incrível de até 50% na sua concretização!
         </Paragraph>
         <S.SolicitarOrcamentoBTN>
