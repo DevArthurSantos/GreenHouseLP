@@ -3,7 +3,7 @@ import S from "./styled"
 
 type RightNavProps = {
   open: boolean,
-  setOpen(): void
+  setOpen?(): void
 }
 
 const RightNav = ({ open, setOpen }: RightNavProps) => {
@@ -12,7 +12,7 @@ const RightNav = ({ open, setOpen }: RightNavProps) => {
 
   function handleActive(active: string) {
     setActive(active)
-    setOpen()
+    if(setOpen) setOpen()
   }
   return (
     <S.Ul open={open}>
