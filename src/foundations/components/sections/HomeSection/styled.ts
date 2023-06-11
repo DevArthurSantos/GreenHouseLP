@@ -8,7 +8,7 @@ const Styleds = {
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  padding-top: 95px;
+  
   `,
   HomeSectionContext: styled.div`
   display: flex;
@@ -17,15 +17,25 @@ const Styleds = {
   flex-flow: column nowrap;
   height: ${HomeSectionWrapperHeight};
   gap: 50px;
+  h1 {
+    
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+  }
   `,
-  SolicitarOrcamentoBTN: styled.button`
-  width: 195px;
-  height: 50px;
+  SolicitarOrcamentoBTN: styled.a`
+  width: 236px;
+  height: 60px;
   background: ${({ theme }) => theme.colors.LightOrange};
   color: ${({ theme }) => theme.colors.text.Light};
-  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration:none;
   border-radius: 10px;
   font-weight: 700;
+  font-size: 16px;
+  line-height: 28px;
   `
 };
 

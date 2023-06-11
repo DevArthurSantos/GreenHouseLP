@@ -23,7 +23,7 @@ const Styleds = {
   justify-content: space-between;
   width: 100%;
   height: 100%;
-  margin: 0 100px 0 100px;
+  margin: 0 185px 0 130px;
   @media (max-width: 768px) {
     display: flex;
     align-items: center;

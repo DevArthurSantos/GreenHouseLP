@@ -9,7 +9,7 @@ const Styleds = {
   align-items: flex-start;
   justify-content: center;
   flex-flow: row wrap;
-  gap: 61px;
+  gap: 90px;
   padding: 100px 0;
   @media (max-width: 500px) {
     padding: 0;
@@ -22,7 +22,7 @@ const Styleds = {
   display: flex;
   align-items: center;
   flex-direction: column;
-  gap: 25px;
+  gap: 50px;
   @media (max-width: 500px) {
     display: none;
   }

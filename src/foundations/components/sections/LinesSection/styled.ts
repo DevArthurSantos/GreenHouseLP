@@ -13,13 +13,20 @@ const Styleds = {
   flex-flow: column nowrap;
   padding: 150px 0;
   gap: 100px;
+  div {
+    &  h1 {
+    
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+  }
+  }
   `,
   LinesCardsContainer: styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
   flex-flow: row wrap;
-  gap: 150px;
+  gap: 130px;
   `,
 };
 

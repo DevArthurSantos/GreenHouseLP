@@ -33,15 +33,11 @@ function AboutSection({ id }: { id: string }): JSX.Element {
           <Paragraph
             color={ParagraphColorsEnum.Primary}
             align="left"
+            weight="400"
           >
-            Somos líderes na fabricação de tijolos ecológicos, oferecendo soluções inovadoras para construções sustentáveis. Combinamos técnicas responsáveis de produção e materiais de alta qualidade, liderando a transformação para um setor da construção mais consciente. e a produção e materiais de alta qualidade. Atendemos às demandas por sustentabilidade, eficiência e redução de impacto ambiental.
+            Somos líderes na fabricação de tijolos ecológicos, oferecendo soluções inovadoras para construções sustentáveis. Utilizamos técnicas responsáveis de produção e materiais de alta qualidade, reduzindo o impacto ambiental. Nossos tijolos são feitos com matérias-primas renováveis e recicladas, e são duráveis e eficientes.<br/><br/> Atendemos às demandas por sustentabilidade, contribuindo para um setor da construção mais consciente. Acreditamos na importância da construção sustentável para o futuro e estamos comprometidos com essa mudança positiva. Faça parte dessa jornada conosco, escolhendo nossos tijolos ecológicos. Juntos, podemos construir um mundo mais sustentável.
           </Paragraph>
-          <Paragraph
-            color={ParagraphColorsEnum.Primary}
-            align="left"
-          >
-            Somos líderes na fabricação de tijolos ecológicos, oferecendo soluções inovadoras para construções sustentáveis. Combinamos técnicas responsáveis de produção e materiais de alta qualidade, liderando a transformação para um setor da construção mais consciente. e a produção e materiais de alta qualidade. Atendemos às demandas por sustentabilidade, eficiência e redução de impacto ambiental.
-          </Paragraph>
+
         </S.TextContext>
 
       </S.AboutSectionContext>

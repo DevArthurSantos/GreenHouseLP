@@ -14,7 +14,7 @@ function HomeSection({ id }: { id: string }): JSX.Element {
         <Paragraph color={ParagraphColorsEnum.Light} size="22px" width="900px">
           Não perca tempo e solicite um orçamento agora mesmo para realizar o projeto dos seus sonhos com um desconto incrível de até 50% na sua concretização!
         </Paragraph>
-        <S.SolicitarOrcamentoBTN>
+        <S.SolicitarOrcamentoBTN href="https://wa.me/5522981596583" target='_blank'>
           Solicitar Orçamento
         </S.SolicitarOrcamentoBTN>
       </S.HomeSectionContext>
@@ -23,3 +23,5 @@ function HomeSection({ id }: { id: string }): JSX.Element {
 }
 
 export default HomeSection;
+
+
