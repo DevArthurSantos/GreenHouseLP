@@ -82,6 +82,10 @@ const Styleds = {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 6.5371px;
   border: none;
+  cursor: pointer;
+  &:hover{
+    opacity: .8;
+  }
   `,
 };
 

@@ -11,6 +11,7 @@ const Styleds = {
     height: 95px;
     position: fixed;
     z-index: 50;
+    max-width: 1920px;
   `,
   LogoContainer: styled.div`
   `,
