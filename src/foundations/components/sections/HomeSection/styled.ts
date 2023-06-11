@@ -1,5 +1,7 @@
 import styled from "styled-components";
 
+const HomeSectionWrapperHeight = `${window.screen.height}px`
+
 const Styleds = {
   HomeSectionWrapper: styled.section`
   background: url('assets/images/png/homeBackground.png');
@@ -13,8 +15,7 @@ const Styleds = {
   align-items: center;
   justify-content: center;
   flex-flow: column nowrap;
-  height: calc(100vh - 95px);
-  max-height: 732px;
+  height: ${HomeSectionWrapperHeight};
   gap: 50px;
   `,
   SolicitarOrcamentoBTN: styled.button`
