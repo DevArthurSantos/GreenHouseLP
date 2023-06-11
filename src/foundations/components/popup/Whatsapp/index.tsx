@@ -9,7 +9,7 @@ function Whatsapp() {
   return (
 
     <>
-      <S.WhatsappContainer href="https://wa.me/5581994920769" target='_blank'>
+      <S.WhatsappContainer href="https://wa.me/5522981596583" target='_blank'>
         <SiWhatsapp size={'18px'} color="#fcfcfc" />
         <div>
           <Paragraph color={ParagraphColorsEnum.Light} size="16px">

@@ -23,8 +23,6 @@ function HomePageLayout(): JSX.Element {
         <S.Padding>
           <ContactSection id="Contato" />
         </S.Padding>
-        {/* <FAQSection /> */}
-        {/* <FotterSection /> */}
       </S.Container>
       <S.Hidden>
         <FotterSection />

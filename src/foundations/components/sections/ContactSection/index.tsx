@@ -124,7 +124,7 @@ function ContactSection({ id }: { id: string }): JSX.Element {
             <S.FormInput type="email" placeholder="E-mail*" value={mailto} onChange={(e) => setMailto(e.target.value)} />
             <S.FormInput type="tel" placeholder="Telefone*" value={contact} onChange={(e) => setContact(e.target.value)} />
             <S.FormInput type="text" placeholder="Empresa*" value={company} onChange={(e) => setCompany(e.target.value)} />
-            <S.FormInputTextArea placeholder="Menssagem*" value={message} onChange={(e) => setMessage(e.target.value)} />
+            <S.FormInputTextArea placeholder="Mensagem*" value={message} onChange={(e) => setMessage(e.target.value)} />
             <S.FormInputSubmit type="submit" value="Enviar" onClick={(e) => sendEmail(e)} />
           </S.InputsContainer>
         </S.FormContainer>

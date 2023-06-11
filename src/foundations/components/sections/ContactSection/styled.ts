@@ -7,9 +7,9 @@ const Styleds = {
   ContactSectionContext: styled.div`
   display: flex;
   align-items: flex-start;
-  justify-content: space-around;
+  justify-content: center;
   flex-flow: row wrap;
-  gap: 50px;
+  gap: 61px;
   padding: 100px 0;
   @media (max-width: 500px) {
     padding: 0;

@@ -11,7 +11,8 @@ const Styleds = {
   AboutSectionContext: styled.div`
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 89px;
   flex-flow: row wrap-reverse;
   ${Responsiveness(TextContextBreakpoints)}
   `,

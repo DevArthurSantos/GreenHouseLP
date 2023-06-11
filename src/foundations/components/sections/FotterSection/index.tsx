@@ -21,10 +21,9 @@ function FotterSection(): JSX.Element {
             >
               Menu Alternativo
             </Title>
-            <a>Home</a>
-            <a>Produtos</a>
-            <a>FAQ</a>
-            <a>Política de Privacidade</a>
+            <a href="#Inicio">Inicio</a>
+            <a href="#Sobre">Sobre</a>
+            <a href="#Produtos">Produtos</a>
           </div>
           <div>
             <Title
@@ -34,8 +33,8 @@ function FotterSection(): JSX.Element {
               Contato
             </Title>
             <a>Rua Maria José mahon santos - Macaé - RJ, 27946240</a>
-            <a>email@casaverde.com</a>
-            <a>(22) 98147-3329</a>
+            {/* <a>email@casaverde.com</a> */}
+            <a href="https://wa.me/5522981596583" target='_blank'>(22) 98159-6583</a>
           </div>
           <div>
             <Title
@@ -43,8 +42,14 @@ function FotterSection(): JSX.Element {
               size='24px'>
               Redes Sociais
             </Title>
-            <a>@casaverde</a>
-            <a>/casaverde</a>
+            <div>
+              <img src="assets/images/png/IGVector.png" />
+              <a href="https://www.instagram.com/casaverdeconst/" target='_blank'>@casaverdeconst</a>
+            </div>
+            {/* <div>
+              <img src="assets/images/png/LDVector.png" />
+              <a href="" target='_blank'>/casaverde</a>
+            </div> */}
           </div>
         </S.FotterContent>
         <S.FotterCopy>

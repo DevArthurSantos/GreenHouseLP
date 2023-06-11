@@ -14,6 +14,7 @@ const Styleds = {
   justify-content: center;
   flex-flow: column nowrap;
   height: calc(100vh - 95px);
+  max-height: 732px;
   gap: 50px;
   `,
   SolicitarOrcamentoBTN: styled.button`

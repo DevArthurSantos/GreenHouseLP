@@ -22,18 +22,28 @@ const Styleds = {
   width: 100%;
   min-height: 100%;
   flex-flow: row wrap;
-  & > div {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  width: 240px;
-  gap: 25px;
-  & > a {
-    font-size: 16px;
-    cursor: pointer;
+    & > div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     width: 240px;
-    color: ${({ theme }) => theme.colors.text.Light};
-  }
+    gap: 25px;
+      a {
+        font-size: 16px;
+        cursor: pointer;
+        width: 240px;
+        color: ${({ theme }) => theme.colors.text.Light};
+        text-decoration: none;
+      }
+      & > div {
+          display: flex;
+          align-items: center;
+          gap: 5px;
+        img {
+          width: 26px;
+        }
+      }
+     
   }
   `,
   FotterCopy: styled.div`
