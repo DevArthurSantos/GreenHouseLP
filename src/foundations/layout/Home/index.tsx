@@ -11,26 +11,28 @@ import MobileFotterSection from "@foundations/components/sections/MobileFotterSe
 
 function HomePageLayout(): JSX.Element {
   return (
-    <S.Container>
+    <>
       <Header />
-      <HomeSection id="Inicio" />
-      <S.Padding>
-        <AboutSection id="Sobre" />
-        <ProductSection id="Produtos" />
-      </S.Padding>
-      <LinesSection />
-      <S.Padding>
-        <ContactSection id="Contato" />
-      </S.Padding>
-      {/* <FAQSection /> */}
-      {/* <FotterSection /> */}
+      <S.Container>
+        <HomeSection id="Inicio" />
+        <S.Padding>
+          <AboutSection id="Sobre" />
+          <ProductSection id="Produtos" />
+        </S.Padding>
+        <LinesSection />
+        <S.Padding>
+          <ContactSection id="Contato" />
+        </S.Padding>
+        {/* <FAQSection /> */}
+        {/* <FotterSection /> */}
+      </S.Container>
       <S.Hidden>
         <FotterSection />
       </S.Hidden>
       <S.Show>
         <MobileFotterSection />
       </S.Show>
-    </S.Container>
+    </>
   );
 }
 

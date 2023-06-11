@@ -4,12 +4,16 @@ const Styleds = {
   FotterSectionWrapper: styled.section`
   width: 100%;
   background: ${({ theme }) => theme.colors.Green};
+  `,
+  Content: styled.div`
+  max-width: 1920px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   padding-top: 25px;
   gap: 25px;
+  margin: 0 auto;
   `,
   FotterContent: styled.div`
   display: flex;

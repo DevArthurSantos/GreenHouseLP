@@ -16,7 +16,7 @@ const RightNav = ({ open, setOpen }: RightNavProps) => {
   }
   return (
     <S.Ul open={open}>
-      {pags.map((p) => <S.NavButtons href={'#' + p} onClick={() => { handleActive(p) }} isActive={active} name={p}>{p}</S.NavButtons>)}
+      {pags.map((p) => <S.NavButtons key={`id:${p}`} href={'#' + p} onClick={() => { handleActive(p) }} isactive={active} name={p}>{p}</S.NavButtons>)}
     </S.Ul>
   )
 }

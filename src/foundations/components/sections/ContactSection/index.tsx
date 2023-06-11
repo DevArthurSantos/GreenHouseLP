@@ -1,10 +1,17 @@
+import { useState } from "react";
+import { init, send } from "@emailjs/browser"
+
 import Paragraph from "@foundations/components/typography/Paragraph";
 import Title from "@foundations/components/typography/Title";
 import { ParagraphColorsEnum } from "@infra/enums/paragraphEnums";
 import { TitleColorsEnum } from "@infra/enums/titleEnums";
-import { useState } from "react";
-import { init, send } from "@emailjs/browser"
 import S from "./styled";
+
+const userId = process.env.USER_ID;
+const serviceId = process.env.SERVICE_ID;
+const templateId = process.env.TEMPLATE_ID;
+
+
 
 function ContactSection({ id }: { id: string }): JSX.Element {
   const [name, setName] = useState('');
@@ -50,8 +57,8 @@ function ContactSection({ id }: { id: string }): JSX.Element {
     };
   
     const sendEmail = await Promise.all([
-      init('T5Bd_Euyyl0VIjCqM'),
-      send('service_ei747ic', 'template_h361g9q', formData)
+      init(userId),
+      send(serviceId, templateId, formData)
     ]);
   
     setName('')
@@ -115,7 +122,7 @@ function ContactSection({ id }: { id: string }): JSX.Element {
           <S.InputsContainer>
             <S.FormInput type="text" placeholder="Nome*" value={name} onChange={(e) => setName(e.target.value)} />
             <S.FormInput type="email" placeholder="E-mail*" value={mailto} onChange={(e) => setMailto(e.target.value)} />
-            <S.FormInput type="tel" placeholder="00 00000 0000*" value={contact} onChange={(e) => setContact(e.target.value)} />
+            <S.FormInput type="tel" placeholder="Telefone*" value={contact} onChange={(e) => setContact(e.target.value)} />
             <S.FormInput type="text" placeholder="Empresa*" value={company} onChange={(e) => setCompany(e.target.value)} />
             <S.FormInputTextArea placeholder="Menssagem*" value={message} onChange={(e) => setMessage(e.target.value)} />
             <S.FormInputSubmit type="submit" value="Enviar" onClick={(e) => sendEmail(e)} />

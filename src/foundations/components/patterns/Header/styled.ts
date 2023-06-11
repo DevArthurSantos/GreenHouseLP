@@ -11,14 +11,17 @@ const Styleds = {
     height: 95px;
     position: fixed;
     z-index: 50;
-    max-width: 1920px;
+    display: flex;
+    justify-content: center;
   `,
   LogoContainer: styled.div`
   `,
   HeaderContext: styled.div`
+  max-width: 1920px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 100%;
   height: 100%;
   margin: 0 100px 0 100px;
   @media (max-width: 768px) {

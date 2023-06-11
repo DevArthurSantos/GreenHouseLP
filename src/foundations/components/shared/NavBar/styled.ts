@@ -4,7 +4,7 @@ import NavBreakpoints from "./Breakpoints/NavBreakpoints";
 import NavBTNBreakpoints from "./Breakpoints/NavBTNBreakpoints";
 
 type isActive = {
-  isActive: string
+  isactive: string
   name: string
 }
 
