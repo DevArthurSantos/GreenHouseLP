@@ -52,8 +52,8 @@ const Styles = {
   font-family: Montserrat;
   position: relative;
   ${Responsiveness(NavBTNBreakpoints)}
-  ${({ theme, isActive, name }) => {
-      if (isActive === name) {
+  ${({ theme, isactive, name }) => {
+      if (isactive === name) {
         return css`
         color: ${theme.colors.LightOrange};
         &::before {
