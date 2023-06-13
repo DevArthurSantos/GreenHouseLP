@@ -5,9 +5,9 @@ import { ParagraphColorsEnum } from "@infra/enums/paragraphEnums";
 import { TitleColorsEnum } from "@infra/enums/titleEnums";
 import S from "./styled";
 
-function LinesSection(): JSX.Element {
+function LinesSection({ id }: { id: string }): JSX.Element {
   return (
-    <S.LinesSectionWrapper>
+    <S.LinesSectionWrapper id={id}>
       <S.LinesSectionContext>
         <div>
           <Title color={TitleColorsEnum.Light} size="54px" weight="700">

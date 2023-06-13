@@ -17,9 +17,9 @@ function HomePageLayout(): JSX.Element {
         <HomeSection id="Inicio" />
         <S.Padding>
           <AboutSection id="Sobre" />
-          <ProductSection id="Produtos" />
+          <ProductSection />
         </S.Padding>
-        <LinesSection />
+        <LinesSection id="Produtos" />
         <S.Padding>
           <ContactSection id="Contato" />
         </S.Padding>
