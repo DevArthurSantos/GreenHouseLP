@@ -7,12 +7,18 @@ const Styleds = {
   AboutSectionWrapper: styled.section`
     width: 100%;
     padding: 100px 0;
+    @media (max-width: 500px) {
+    padding: 0;
+  }
   `,
   AboutSectionContext: styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 89px;
+  @media (max-width: 500px) {
+    gap: 0;
+  }
   flex-flow: row wrap-reverse;
   ${Responsiveness(TextContextBreakpoints)}
   `,

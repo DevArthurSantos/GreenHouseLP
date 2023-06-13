@@ -18,9 +18,10 @@ const Styleds = {
   height: ${HomeSectionWrapperHeight};
   gap: 50px;
   h1 {
-    
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-
+  }
+  @media (max-width: 500px) {
+    padding: 0 20px;
   }
   `,
   SolicitarOrcamentoBTN: styled.a`

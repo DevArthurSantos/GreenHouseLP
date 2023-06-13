@@ -12,7 +12,7 @@ function HomeSection({ id }: { id: string }): JSX.Element {
           CONSTRUA A CASA DOS SEUS SONHOS COM TIJOLOS ECOLÓGICOS
         </Title>
         <Paragraph color={ParagraphColorsEnum.Light} size="22px" width="900px">
-          Não perca tempo e solicite um orçamento agora mesmo para realizar o projeto dos seus sonhos com um desconto incrível de até 50% na sua concretização!
+          Não perca mais tempo, solicite um orçamento agora mesmo e realize o projeto dos seus sonhos com uma economia surpreendente de até 50% na sua concretização!
         </Paragraph>
         <S.SolicitarOrcamentoBTN href="https://wa.me/5522981596583" target='_blank'>
           Solicitar Orçamento

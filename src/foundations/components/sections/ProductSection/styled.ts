@@ -4,9 +4,9 @@ const Styleds = {
   ProductSectionWrapper: styled.section`
   width: 100%;
   padding: 100px 0;
-
   @media (max-width: 500px) {
-        display: none;
+      display: none;
+      padding: 0;
     }
   `,
   ProductSectionContext: styled.div`
