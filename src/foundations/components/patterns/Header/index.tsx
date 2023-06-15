@@ -6,7 +6,9 @@ function Header(): JSX.Element {
     <S.HeaderWrapper>
       <S.HeaderContext>
         <S.LogoContainer>
-          <S.Image src="assets/images/png/logo.png" />
+          <a href='#Inicio'>
+            <S.Image src="assets/images/png/logo.png" />
+          </a>
         </S.LogoContainer>
         <S.LogoContainer>
           <NavBar />
